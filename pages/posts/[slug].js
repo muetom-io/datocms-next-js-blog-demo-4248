@@ -50,8 +50,8 @@ export default function Post({ post, morePosts, preview }) {
   )
 }
 
-export async function getStaticProps({ params, preview }) {
-  const data = await getPostAndMorePosts(params.slug, preview)
+export async function getStaticProps({ params, preview = null }) {
+  const data = await getPostAndMorePosts(params.slug, preview ? true : false )
   const content = await markdownToHtml(data?.post?.content || '')
 
   return {
