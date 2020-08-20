@@ -2,11 +2,13 @@
   @apply text-lg leading-relaxed;
 }
 
-.markdown p,
+.markdown p {
+  @apply my-6 text-2xl;
+}
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-6 text-xl;
 }
 
 .markdown h2 {

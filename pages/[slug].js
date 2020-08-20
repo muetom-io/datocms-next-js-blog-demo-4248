@@ -6,13 +6,17 @@ import Header from '../components/header'
 import PostHeader from '../components/post-header'
 import SectionSeparator from '../components/section-separator'
 import Layout from '../components/layout'
-import { getAllPagesWithSlug , getPage} from '../lib/api'
+import { getAllPagesWithSlug , getPage, getAllProducts} from '../lib/api'
 import PostTitle from '../components/post-title'
+
+import Pricing from '../components/pricing'
+import Contact from '../components/contact'
+
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import markdownToHtml from '../lib/markdownToHtml'
 
-export default function Page({ page, preview }) {
+export default function Page({ page, preview, allProducts }) {
   const router = useRouter()
   if (!router.isFallback && !page?.slug) {
     return <ErrorPage statusCode={404} />
@@ -28,7 +32,7 @@ export default function Page({ page, preview }) {
             <article>
               <Head>
                 <title>
-                  {page.title} | Next.js Blog Example with {CMS_NAME}
+                  {page.title} | Kalamata Olivenöl
                 </title>
                 <meta property="og:image" content={page.ogImage.url} />
               </Head>
@@ -41,6 +45,9 @@ export default function Page({ page, preview }) {
               <PostBody content={page.content} />
             </article>
             <SectionSeparator />
+            <Pricing products={allProducts}/>
+            <SectionSeparator />
+<Contact/>
           </>
         )}
       </Container>
@@ -50,15 +57,15 @@ export default function Page({ page, preview }) {
 
 export async function getStaticProps({ params, preview = null }) {
   const data = await getPage(params.slug, preview ? true : false )
-  const content = await markdownToHtml(data?.page?.content || '')
-
+/*   const content = await markdownToHtml(data?.page?.content || '')
+ */  const allProducts = await getAllProducts(data || '')
   return {
     props: {
       preview,
       page: {
         ...data?.page,
-        content,
-      }     
+      },
+      ...allProducts     
     },
   }
 }
