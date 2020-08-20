@@ -6,10 +6,7 @@ export default function Pricing({ products }) {
       <div className="flex flex-col text-center w-full mb-10">
       <PostSubTitle>Unsere Produkte</PostSubTitle>
 
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-xl px-4 sm:px-0">
-          Bei mehreren Produkten reduzieren sich natürlich die Versandkosten.
-          Möchten Sie was bestellen? Dann schreiben Sie uns!
-        </p>
+        
       </div>
       <div className="lg:w-2/3 w-full mx-auto overflow-auto">
         <table className="table-auto w-full text-left whitespace-no-wrap mb-10">
@@ -41,7 +38,14 @@ export default function Pricing({ products }) {
             ))}
           </tbody>
         </table>
+        
       </div>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-center text-xl px-4 mb-4 sm:px-0">
+          Bei mehreren Produkten reduzieren sich natürlich die Versandkosten.
+          </p>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-center text-xl px-4 mb-4 sm:px-0">
+            Möchten Sie unsere Olivenprodukte genießen? Dann schreiben Sie uns!
+        </p>
     </section>
   );
 }

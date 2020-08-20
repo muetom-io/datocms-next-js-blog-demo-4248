@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import PostSubTitle from '../components/post-sub-title'
-
+import PostSubTitle from "../components/post-sub-title";
 
 export default () => {
   const [status, setStatus] = useState({
@@ -64,11 +63,8 @@ export default () => {
   return (
     <section className="text-gray-700 body-font relative">
       <div className="container px-5 py-2 mx-auto">
-        <div className="flex flex-col text-center w-full mb-12">
-<PostSubTitle>Kontaktformular</PostSubTitle>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-xl">
-           Für eine Bestellung bitte das folgende Formular benutzen.
-          </p>
+        <div className="flex flex-col text-center w-full mb-6">
+          <PostSubTitle>Kontaktformular</PostSubTitle>
         </div>
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <form onSubmit={handleOnSubmit}>
@@ -121,23 +117,23 @@ export default () => {
                     : "Warten..."}
                 </button>
               </div>
-              </div>
-            </form>
-            {status.info.error && (
-              <div className="error">Error: {status.info.msg}</div>
-            )}
-            {!status.info.error && status.info.msg && (
-              <div className="success">{status.info.msg}</div>
-            )}
-            <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <p className="leading-normal my-5">
-                Claudia Kliem-Petropoulou
-                <br />
-                Tourles, GR-24100 Kalamata
-              </p>
             </div>
+          </form>
+          {status.info.error && (
+            <div className="error">Error: {status.info.msg}</div>
+          )}
+          {!status.info.error && status.info.msg && (
+            <div className="success">{status.info.msg}</div>
+          )}
+          <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+            <p className="leading-normal my-5">
+              Claudia Kliem-Petropoulou
+              <br />
+              Tourles, GR-24100 Kalamata
+            </p>
           </div>
         </div>
+      </div>
     </section>
   );
 };
