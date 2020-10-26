@@ -6,15 +6,13 @@ import Header from '../components/header'
 import PostHeader from '../components/post-header'
 import SectionSeparator from '../components/section-separator'
 import Layout from '../components/layout'
-import { getAllPagesWithSlug , getPage, getAllProducts} from '../lib/api'
+import { getPage, getAllProducts} from '../lib/api'
 import PostTitle from '../components/post-title'
 
 import Pricing from '../components/pricing'
 import Contact from '../components/contact'
 
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
-import markdownToHtml from '../lib/markdownToHtml'
 
 export default function Page({ page, preview, allProducts }) {
   const router = useRouter()
@@ -57,8 +55,7 @@ export default function Page({ page, preview, allProducts }) {
 
 export async function getStaticProps({ params, preview = null }) {
   const data = await getPage("index", preview ? true : false )
-/*   const content = await markdownToHtml(data?.page?.content || '')
- */  const allProducts = await getAllProducts(data || '')
+  const allProducts = await getAllProducts(data || '')
   return {
     props: {
       preview,
