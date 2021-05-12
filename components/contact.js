@@ -108,7 +108,7 @@ export default () => {
                 <button
                   type="submit"
                   disabled={status.submitting}
-                  className="flex mx-auto text-black bg-customGreen border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg"
+                  className="flex mx-auto text-white bg-customGreen border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg"
                 >
                   {!status.submitting
                     ? !status.submitted

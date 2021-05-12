@@ -12,16 +12,16 @@ export default function Pricing({ products }) {
         <table className="table-auto w-full text-left whitespace-no-wrap mb-10">
           <thead>
             <tr>
-              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-customGreen rounded-tl rounded-bl">
+              <th className="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-customGreen rounded-tl rounded-bl">
                 Produkt
               </th>
-              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-customGreen">
+              <th className="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-customGreen">
                 Einzelpreis
               </th>
-              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-customGreen">
+              <th className="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-customGreen">
                 Versandkosten
               </th>
-              <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-customGreen">
+              <th className="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-customGreen">
                 Gesamtpreis
               </th>
               <th className="w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-customGreen rounded-tr rounded-br"></th>
