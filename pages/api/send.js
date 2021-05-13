@@ -4,11 +4,11 @@ export default async function(req, res) {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
   const { email, message, name } = req.body
-
+  const recipient = process.env(NEXT_EMAIL_RECIPIENT)
   const content = {
-    to: 'thomas.mueseler@gmail.com',
-    from: {email: 'rotpunkt.dev@gmail.com', name: 'Website Nachrichtenformular'},
-    subject: `New Message From - ${name} (${email})`,
+    to: recipient,
+    from: {email: email, name: 'Website Nachrichtenformular'},
+    subject: `Website: Neue Nachricht von - ${name}`,
     reply_to: `${email}`,
     text: message,
     html: `<p>${message}</p>`
