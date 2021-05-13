@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
           <meta content="width=device-width, initial-scale=1" name="viewport" />
-          <meta name = "description" content = "Bestellen Sie hier unser Olivenöl | Direkt aus Kalamata vom Familienbetrieb"/>
+          <meta name = "description" content = "Bestellen Sie unser Olivenöl | Direkt aus Kalamata vom Familienbetrieb"/>
           <link
             rel="apple-touch-icon"
             sizes="180x180"
