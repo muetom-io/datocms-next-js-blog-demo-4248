@@ -1,12 +1,10 @@
-import PostSubTitle from '../components/post-sub-title'
+import PostSubTitle from "../components/post-sub-title";
 
 export default function Pricing({ products }) {
   return (
     <section className="text-gray-700 body-font relative">
       <div className="flex flex-col text-center w-full mb-10">
-      <PostSubTitle>Unsere Produkte</PostSubTitle>
-
-        
+        <PostSubTitle>Unsere Produkte</PostSubTitle>
       </div>
       <div className="lg:w-2/3 w-full mx-auto overflow-auto">
         <table className="table-auto w-full text-left whitespace-no-wrap mb-10">
@@ -31,21 +29,21 @@ export default function Pricing({ products }) {
             {products.map((product) => (
               <tr key={product.name}>
                 <td className="px-4 py-3">{product.name}</td>
-                <td className="px-4 py-3">{product.einzelpreis} €</td>
-                <td className="px-4 py-3">{product.versandkosten} €</td>
-                <td className="px-4 py-3">{product.gesamtpreis} €</td>
+                <td className="px-4 py-3">{product.einzelpreis.toString().replace('.', ',')} €</td>
+                <td className="px-4 py-3">{product.versandkosten.toString().replace('.', ',')} €</td>
+                <td className="px-4 py-3">{product.gesamtpreis.toString().replace('.', ',')} €</td>
               </tr>
             ))}
           </tbody>
         </table>
-        
       </div>
       <p className="lg:w-2/3 mx-auto leading-relaxed text-center text-xl px-4 mb-4 sm:px-0">
-          Bei mehreren Produkten reduzieren sich natürlich die Versandkosten.
-          </p>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-center text-xl px-4 mb-4 sm:px-0">
-            Möchten Sie unsere Olivenprodukte genießen? Dann schreiben Sie uns!
-        </p>
+        Beim Kauf mehrerer Produkte reduzieren sich die Versandkosten. In einem
+        Karton (ca. 6 Euro) können bis zu 20kg verschickt werden.
+      </p>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-center text-xl px-4 mb-4 sm:px-0">
+        Möchten Sie unsere Olivenprodukte genießen? Dann schreiben Sie uns!
+      </p>
     </section>
   );
 }
