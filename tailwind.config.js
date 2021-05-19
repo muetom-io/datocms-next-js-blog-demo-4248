@@ -1,4 +1,8 @@
 module.exports = {
+  purge: [
+    './**/*.js',
+    './**/*.html',
+  ],
   theme: {
     container: {
       padding: {
