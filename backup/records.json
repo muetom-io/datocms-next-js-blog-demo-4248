@@ -1,0 +1,191 @@
+[
+  {
+    "id": "5925628",
+    "name": "1 Glas schwarze Oliven (0,5 kg)",
+    "einzelpreis": 5.5,
+    "versandkosten": 5.5,
+    "gesamtpreis": 11,
+    "updatedAt": "2021-05-18T15:55:37.774+01:00",
+    "createdAt": "2020-08-20T09:56:27.412+01:00",
+    "meta": {
+      "createdAt": "2020-08-20T09:56:27.412+01:00",
+      "updatedAt": "2021-05-18T15:55:37.774+01:00",
+      "publishedAt": "2021-05-18T15:55:37.796+01:00",
+      "firstPublishedAt": "2020-08-20T09:56:27.422+01:00",
+      "publicationScheduledAt": null,
+      "unpublishingScheduledAt": null,
+      "status": "published",
+      "isValid": true,
+      "currentVersion": "87435388"
+    },
+    "itemType": "228726",
+    "creator": {
+      "id": "9697",
+      "type": "user"
+    }
+  },
+  {
+    "id": "5925629",
+    "name": "1 Glas schwarze Oliven (1,0 kg)",
+    "einzelpreis": 10,
+    "versandkosten": 5.5,
+    "gesamtpreis": 15.5,
+    "updatedAt": "2021-05-18T15:55:27.630+01:00",
+    "createdAt": "2020-08-20T09:57:24.458+01:00",
+    "meta": {
+      "createdAt": "2020-08-20T09:57:24.458+01:00",
+      "updatedAt": "2021-05-18T15:55:27.630+01:00",
+      "publishedAt": "2021-05-18T15:55:27.669+01:00",
+      "firstPublishedAt": "2020-08-20T09:57:24.468+01:00",
+      "publicationScheduledAt": null,
+      "unpublishingScheduledAt": null,
+      "status": "published",
+      "isValid": true,
+      "currentVersion": "87435381"
+    },
+    "itemType": "228726",
+    "creator": {
+      "id": "9697",
+      "type": "user"
+    }
+  },
+  {
+    "id": "4649979",
+    "coverImage": {
+      "alt": null,
+      "title": null,
+      "customData": {},
+      "focalPoint": null,
+      "uploadId": "15533608"
+    },
+    "title": "Herzlich Willkommen",
+    "excerpt": "excerpt",
+    "content": "## Herkunft & Herstellung\n\nUnser ausgezeichnetes sortenreines Olivenöl aus der Koroneiki-Olive stammt aus Kalamata, einer der bekanntesten Olivenregionen der Welt. Unsere Felder sind seit Generationen in Familienbesitz und werden von uns liebevoll und nachhaltig bearbeitet und gepflegt.\n\nUnser Olivenöl wird ausschließlich mit mechanischem Verfahren gewonnen. Das Ergebnis davon liegt in Form eines edlen naturbelassenen Olivenöls vor. Lassen Sie sich vom reinen Geschmack unseres Öls überzeugen.\n\n![Von der Blüte der Olive über die Olivenernte zum Olivenöl](https://www.datocms-assets.com/27208/1621349285-bluete-ernte-oel.png)\n\n## Geschmack\n\nOlivenöl ist wie Wein ein lebendiges Produkt. Es verändert im Laufe des Jahres seinen Geschmack. Kurz nach der Ernte hat es oft einen leicht bitteren, scharfen Geschmack und ist etwas trüb, später wird es sanfter, der fruchtige Geschmack tritt stärker zutage, und es wird klar.\n\n![Frisches Olivenöl aus Kalamata](https://www.datocms-assets.com/27208/1620802228-ooel1.jpg)\n\n\n\n## Qualität & Lagerung\n\nAll dies und ein Ӧlsäuregehalt von ca. 0,3 % sprechen für die besondere Qualität unseres natürlichen Olivenöls.\nAm besten lässt es sich im Kanister an einem hitzegeschützten Ort aufbewahren und wird zum Verzehr in lichtunempfindliche Flaschen abgefüllt.\n\nWir empfehlen zum frischen Olivenöl ein paar leckere Oliven und ein Glas Wein.\n\n![Passend zu jeder Gelegenheit](https://www.datocms-assets.com/27208/1620417382-olivenbrotzeit-frei.png)",
+    "date": "2020-05-04",
+    "slug": "index",
+    "seoSettings": {
+      "image": null,
+      "title": "Olivenöl aus Kalamata",
+      "description": "Das Olivenöl aus Familienbetrieb und weitere griechische Produkte direkt hier beim Erzeuger bestellen.",
+      "twitterCard": null
+    },
+    "updatedAt": "2021-05-18T15:51:15.024+01:00",
+    "createdAt": "2020-05-03T00:01:19.687+01:00",
+    "meta": {
+      "createdAt": "2020-05-03T00:01:19.687+01:00",
+      "updatedAt": "2021-05-18T15:51:15.024+01:00",
+      "publishedAt": "2021-05-18T15:51:34.712+01:00",
+      "firstPublishedAt": "2020-05-03T00:09:54.032+01:00",
+      "publicationScheduledAt": null,
+      "unpublishingScheduledAt": null,
+      "status": "published",
+      "isValid": true,
+      "currentVersion": "87435114"
+    },
+    "itemType": "228305",
+    "creator": {
+      "id": "19562",
+      "type": "account"
+    }
+  },
+  {
+    "id": "39758264",
+    "name": "1 Flasche reines Olivenöl (1 Liter)",
+    "einzelpreis": 10.5,
+    "versandkosten": 5.5,
+    "gesamtpreis": 16,
+    "updatedAt": "2021-05-18T15:46:09.487+01:00",
+    "createdAt": "2021-05-18T15:45:50.298+01:00",
+    "meta": {
+      "createdAt": "2021-05-18T15:45:50.298+01:00",
+      "updatedAt": "2021-05-18T15:46:09.487+01:00",
+      "publishedAt": "2021-05-18T15:46:09.512+01:00",
+      "firstPublishedAt": "2021-05-18T15:45:50.314+01:00",
+      "publicationScheduledAt": null,
+      "unpublishingScheduledAt": null,
+      "status": "published",
+      "isValid": true,
+      "currentVersion": "87434696"
+    },
+    "itemType": "228726",
+    "creator": {
+      "id": "9697",
+      "type": "user"
+    }
+  },
+  {
+    "id": "4651977",
+    "name": "1 Kanister reines Olivenöl (5 Liter)",
+    "einzelpreis": 45,
+    "versandkosten": 6.85,
+    "gesamtpreis": 51.85,
+    "updatedAt": "2021-05-07T21:11:14.755+01:00",
+    "createdAt": "2020-05-03T19:57:02.924+01:00",
+    "meta": {
+      "createdAt": "2020-05-03T19:57:02.924+01:00",
+      "updatedAt": "2021-05-07T21:11:14.755+01:00",
+      "publishedAt": "2021-05-07T21:11:14.778+01:00",
+      "firstPublishedAt": "2020-05-03T19:57:02.941+01:00",
+      "publicationScheduledAt": null,
+      "unpublishingScheduledAt": null,
+      "status": "published",
+      "isValid": true,
+      "currentVersion": "84067574"
+    },
+    "itemType": "228726",
+    "creator": {
+      "id": "19562",
+      "type": "account"
+    }
+  },
+  {
+    "id": "4652041",
+    "name": "1 Kanister reines Olivenöl (3 Liter)",
+    "einzelpreis": 28,
+    "versandkosten": 5.5,
+    "gesamtpreis": 33.5,
+    "updatedAt": "2021-05-07T21:10:28.295+01:00",
+    "createdAt": "2020-05-03T20:56:19.403+01:00",
+    "meta": {
+      "createdAt": "2020-05-03T20:56:19.403+01:00",
+      "updatedAt": "2021-05-07T21:10:28.295+01:00",
+      "publishedAt": "2021-05-07T21:10:28.318+01:00",
+      "firstPublishedAt": "2020-05-03T20:56:19.412+01:00",
+      "publicationScheduledAt": null,
+      "unpublishingScheduledAt": null,
+      "status": "published",
+      "isValid": true,
+      "currentVersion": "84067567"
+    },
+    "itemType": "228726",
+    "creator": {
+      "id": "19562",
+      "type": "account"
+    }
+  },
+  {
+    "id": "4651976",
+    "name": "1 Kanister reines Olivenöl (1 Liter)",
+    "einzelpreis": 11,
+    "versandkosten": 5.5,
+    "gesamtpreis": 16.5,
+    "updatedAt": "2021-05-07T21:10:01.215+01:00",
+    "createdAt": "2020-05-03T19:55:09.863+01:00",
+    "meta": {
+      "createdAt": "2020-05-03T19:55:09.863+01:00",
+      "updatedAt": "2021-05-07T21:10:01.215+01:00",
+      "publishedAt": "2021-05-07T21:10:01.235+01:00",
+      "firstPublishedAt": "2020-05-03T19:55:09.873+01:00",
+      "publicationScheduledAt": null,
+      "unpublishingScheduledAt": null,
+      "status": "published",
+      "isValid": true,
+      "currentVersion": "84067558"
+    },
+    "itemType": "228726",
+    "creator": {
+      "id": "19562",
+      "type": "account"
+    }
+  }
+]

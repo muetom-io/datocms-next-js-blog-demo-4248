@@ -1,23 +1,22 @@
-import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
-import Container from '../components/container'
-import PostBody from '../components/post-body'
-import Header from '../components/header'
-import PostHeader from '../components/post-header'
-import SectionSeparator from '../components/section-separator'
-import Layout from '../components/layout'
-import { getPage, getAllProducts} from '../lib/api'
-import PostTitle from '../components/post-title'
+import { useRouter } from "next/router";
+import ErrorPage from "next/error";
+import Container from "../components/container";
+import PostBody from "../components/post-body";
+import Header from "../components/header";
+import PostHeader from "../components/post-header";
+import SectionSeparator from "../components/section-separator";
+import Layout from "../components/layout";
+import { getPage, getAllProducts } from "../lib/api";
+import PostTitle from "../components/post-title";
+import Pricing from "../components/pricing";
+import Contact from "../components/contact";
 
-import Pricing from '../components/pricing'
-import Contact from '../components/contact'
-
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Page({ page, preview, allProducts }) {
-  const router = useRouter()
+  const router = useRouter();
   if (!router.isFallback && !page?.slug) {
-    return <ErrorPage statusCode={404} />
+    return <ErrorPage statusCode={404} />;
   }
   return (
     <Layout preview={preview}>
@@ -29,9 +28,7 @@ export default function Page({ page, preview, allProducts }) {
           <>
             <article>
               <Head>
-                <title>
-                  {page.title} | Kalamata Olivenöl
-                </title>
+                <title>{page.title} | Kalamata Olivenöl</title>
                 <meta property="og:image" content={page.ogImage.url} />
               </Head>
               <PostHeader
@@ -43,26 +40,26 @@ export default function Page({ page, preview, allProducts }) {
               <PostBody content={page.content} />
             </article>
             <SectionSeparator />
-            <Pricing products={allProducts}/>
+            <Pricing products={allProducts} />
             <SectionSeparator />
-<Contact/>
+            <Contact />
           </>
         )}
       </Container>
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps({ params, preview = null }) {
-  const data = await getPage("index", preview ? true : false )
-  const allProducts = await getAllProducts(data || '')
+  const data = await getPage("index", preview ? true : false);
+  const allProducts = await getAllProducts(data || "");
   return {
     props: {
       preview,
       page: {
         ...data?.page,
       },
-      ...allProducts     
+      ...allProducts,
     },
-  }
+  };
 }

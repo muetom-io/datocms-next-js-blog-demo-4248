@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PostSubTitle from "../components/post-sub-title";
 
-export default () => {
+const Contact = () => {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
@@ -137,3 +137,5 @@ export default () => {
     </section>
   );
 };
+
+export default Contact;
