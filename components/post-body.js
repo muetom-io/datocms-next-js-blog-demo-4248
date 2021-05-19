@@ -3,7 +3,7 @@ import rehypeReact from "rehype-react";
 import unified from 'unified'
 import  markdownTransform from 'remark-parse'
 import remarkRehype from 'remark-rehype'
-
+import React from "react"
 
 export default function PostBody({ content }) {
   const Image = (props) => {

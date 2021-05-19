@@ -7,7 +7,7 @@ const client = new SiteClient(process.env.NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN);
 console.log('Downloading records...');
 client.items.all({}, { allPages: true })
 .then(response => {
-  fs.writeFileSync('records.json', JSON.stringify(response, null, 2));
+  fs.writeFileSync('./backup/records.json', JSON.stringify(response, null, 2));
 })
 .then(() => {
   return client.site.find();
@@ -20,7 +20,7 @@ client.items.all({}, { allPages: true })
         return new Promise((resolve) => {
           const imageUrl = 'https://' + site.imgixHost + upload.path;
           console.log(`Downloading ${imageUrl}...`);
-          const stream = fs.createWriteStream('./' + path.basename(upload.path));
+          const stream = fs.createWriteStream('./backup/' + path.basename(upload.path));
           stream.on('close', resolve);
           request(imageUrl).pipe(stream);
         });
