@@ -1,2 +1,9 @@
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://unser-kalamata-olivenoel.de
+
+# Sitemaps
+Sitemap: https://unser-kalamata-olivenoel.de/sitemap.xml
